@@ -1,0 +1,4 @@
+https://digikent.basaksehir.bel.tr:8091/VadiRestMobile/login/belediyeler/:ilId
+
+
+https://digikent.basaksehir.bel.tr:8091/VadiRestMobile/login/mahalle
