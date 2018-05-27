@@ -1,6 +1,12 @@
+/* odev
+ * Fatih Yavuz 28.05.2018 02:10
+ */
 import React, { Component } from 'react';
 import './App.css';
 import Select from 'react-select';
+
+import { Button } from 'reactstrap';
+import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 
 const API = 'https://digikent.basaksehir.bel.tr:8091/VadiRestMobile/login/belediyeler/';
 const API2 = 'https://digikent.basaksehir.bel.tr:8091/VadiRestMobile/login/mahalle';
@@ -95,8 +101,8 @@ class App extends Component {
             return (
                 <div className="Select">
                     <div>
-                        <input type="number"  onChange = {this.handleChangeInput}/>
-                        <button onClick={this.handleClick}>İl Seç</button>
+                        <input   type="number"  onChange = {this.handleChangeInput}/>
+                        <Button  color ="success" onClick={this.handleClick}>İl Seç</Button>
                     </div>
                     <Select
                         value={selectedOption}
