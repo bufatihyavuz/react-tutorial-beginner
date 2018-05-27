@@ -1,3 +1,12 @@
+.form1{
+  margin: 0 auto;
+}
+
+.Select{
+  text-align: center;
+  width:500px;
+  margin: 0 auto;
+}
 .App {
   text-align: center;
 }
