@@ -5,8 +5,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Select from 'react-select';
 
-import {Button} from 'reactstrap';
-import {InputGroup, InputGroupAddon, InputGroupText, Input} from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, FormText, Container, Row, Col } from 'reactstrap';
 
 const API = 'https://digikent.basaksehir.bel.tr:8091/VadiRestMobile/login/belediyeler/';
 const API2 = 'https://digikent.basaksehir.bel.tr:8091/VadiRestMobile/login/mahalle';
@@ -104,13 +103,11 @@ class App extends Component {
         }
         else {
             return (
-                <div className="Select">
-
+                <div className="Content">
                     <div>
                         <input type="number" onChange={this.handleChangeInput}/>
                         <Button color="success" onClick={this.handleClick}>İl Seç</Button>
                     </div>
-
                     <Select id="selectIl"
                             value={selectedOptionIl}
                             onChange={this.handleChangeIl}
@@ -119,7 +116,6 @@ class App extends Component {
                                     {value: item.id, label: item.tanim}
                                 ))}
                     />
-
                     <Select id="selectIlce"
                             selectedValue={this.state.value}
                             value={selectedOptionIlce}
