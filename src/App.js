@@ -104,9 +104,9 @@ class App extends Component {
         else {
             return (
                 <div className="Content">
-                    <div>
+                    <div  style={{marginBottom:5}}>
                         <input type="number" onChange={this.handleChangeInput}/>
-                        <Button color="success" onClick={this.handleClick}>İl Seç</Button>
+                        <Button color="btn btn-outline-light btn-sm" onClick={this.handleClick}>İl Seç</Button>
                     </div>
                     <Select id="selectIl"
                             value={selectedOptionIl}

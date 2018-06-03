@@ -6,6 +6,8 @@
     padding: 50px;
     border-style: outset;
     border-width:1px;
+    background-color: #4267b2;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .Select{
